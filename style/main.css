@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+}
+
+/*************************Header************************/
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/header-img.svg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /*************header-bg**************/
+  /*************nav bar***************/
+}
+
+header .header-container {
+  width: 100%;
+  height: 100%;
+  line-height: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+header .header-container .heading-container {
+  max-width: 800px;
+  width: 100%;
+  height: 35%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+header .header-container .heading-container h1 {
+  font-weight: 700;
+  font-size: 200%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+header .header-container .heading-container h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  letter-spacing: 0.5rem;
+}
+
+header .header-container .search-container {
+  max-width: 680px;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+header .header-container .search-container .search-bar {
+  border: 2px solid white;
+  max-width: 660px;
+  width: 100%;
+  max-height: 63px;
+  height: 100%;
+}
+
+header .header-container .search-container .search-bar input[type=text] {
+  max-width: 503px;
+  width: 100%;
+  max-height: 63px;
+  height: 100%;
+  background: #FFFFFF;
+  border-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 2.8px;
+  color: #999999;
+}
+
+header .header-container .search-container .search-bar button {
+  position: absolute;
+  max-width: 153px;
+  width: 100%;
+  max-height: 60px;
+  height: 100%;
+  background: #5474FD;
+  border-style: none;
+  font-family: 'Aleo', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 26px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+header .header-container .search-container .scroll-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header .header-container .search-container .arrow-label {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+}
+
+header .header-container .search-container .arrow-label a {
+  text-decoration: none;
+  color: white;
+}
+
+header .header-container .search-container .arrow-label a:hover {
+  color: #84a1d0;
+  transition: all 0.5s ease;
+}
+
+header .header-container .search-container .down-arrow {
+  color: white;
+  text-decoration: none;
+  width: 40%;
+  height: 30%;
+  text-align: center;
+  bottom: 10px;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+  -moz-animation: fade_move_down 4s ease-in-out infinite;
+  animation: fade_move_down 4s ease-in-out infinite;
+  /*animated scroll down arrow*/
+}
+
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fade_move_down {
+  0% {
+    -moz-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+header .nav-bar {
+  background: #5474FD;
+  max-width: 1773px;
+  width: 100%;
+  max-height: 83px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20%;
+}
+
+header .nav-bar .icon-label {
+  display: none;
+}
+
+header .nav-bar .logo h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header .nav-bar .nav-links {
+  max-width: 510px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+header .nav-bar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Aleo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+header .nav-bar .nav-links li a:hover {
+  color: #232222;
+  transition: all 0.5s ease;
+}
+
+/*************************Header End************************/
+/*************************For Mediam Screen************************/
+@media screen and (max-width: 817px) {
+  header .header-container .search-container {
+    max-width: 500px;
+    width: 100%;
+    height: 30%;
+  }
+  header .header-container .search-container .search-bar {
+    max-width: 500px;
+    width: 100%;
+    max-height: 70px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header-container .search-container .search-bar input[type=text] {
+    max-width: 350px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    font-weight: 400;
+    font-size: 10px;
+  }
+  header .header-container .search-container .search-bar button {
+    position: static;
+    max-width: 140px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    font-weight: 400;
+    font-size: 0.7em;
+  }
+  header .nav-bar {
+    margin: 0;
+    padding: 0;
+    max-height: 50px;
+    height: 100%;
+  }
+  header .nav-bar .logo h3 {
+    font-size: 20px;
+  }
+  header .nav-bar .nav-links {
+    max-width: 410px;
+    width: 100%;
+  }
+  header .nav-bar .nav-links li a {
+    font-weight: 50;
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
+/*************************For Mediam Screen end************************/
+/*************************For small Screen************************/
+@media screen and (max-width: 624px) {
+  header .nav-bar {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+  }
+  header .nav-bar .icon-label {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .nav-bar .logo {
+    margin: 1em;
+  }
+  header .nav-bar .logo h1 {
+    font-size: 100%;
+  }
+  header .nav-bar .nav-links {
+    background: #5474FD;
+    padding-right: 1em;
+    width: 50%;
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    z-index: 10;
+    display: none;
+  }
+  header .nav-bar .nav-links li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  header .nav-bar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+  header .nav-bar .nav-links li a:hover {
+    color: #232121;
+  }
+  header #icon {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0.2em;
+    height: 100%;
+  }
+  header .icon-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header #icon:checked ~ .nav-links {
+    display: block;
+    transition: all 0.5s ease;
+  }
+  header .header-container {
+    justify-content: flex-start;
+  }
+  header .header-container .heading-container {
+    height: fit-content;
+    margin-top: 2.5rem;
+  }
+  header .header-container .heading-container h1 {
+    display: none;
+  }
+  header .header-container .heading-container h3 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 80%;
+    letter-spacing: 0.2rem;
+  }
+}
+
+/*************************For small Screen end************************/
