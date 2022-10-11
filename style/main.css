@@ -252,6 +252,103 @@ header .nav-bar .nav-links li a:hover {
 }
 
 /*************************Header End************************/
+.choose-us {
+  margin: 0;
+  padding: 0;
+  max-width: 1770px;
+  width: 100%;
+  max-height: 700px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-image: url(../images/why-choose-us-bg.svg);
+  background-size: cover;
+}
+
+.choose-us .text-box {
+  max-width: 580px;
+  width: 100%;
+  max-height: 700px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.choose-us .text-box h4 {
+  font-family: 'Aleo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.choose-us .text-box p {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.6px;
+  color: #E8E8E8;
+}
+
+.choose-us .text-box button {
+  width: 228px;
+  height: 63px;
+  background: #5474FD;
+  border-style: none;
+}
+
+.choose-us .text-box button a {
+  font-family: 'Aleo', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.choose-us .text-box button:hover {
+  background: #374ba4;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.choose-us .img-holder {
+  padding: 5% 0 5% 0;
+  max-width: 580px;
+  width: 100%;
+  max-height: 650px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.choose-us .img-holder .img-1 {
+  object-fit: cover;
+}
+
+.choose-us .img-holder .img-2 {
+  align-self: flex-end;
+  object-fit: cover;
+}
+
 /*************************For Mediam Screen************************/
 @media screen and (max-width: 817px) {
   header .header-container .search-container {
@@ -302,6 +399,45 @@ header .nav-bar .nav-links li a:hover {
     font-weight: 50;
     font-size: 10px;
     line-height: 20px;
+  }
+  .choose-us {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .choose-us .text-box {
+    max-width: 600px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+  }
+  .choose-us .text-box h4 {
+    font-weight: 180;
+    font-size: 22px;
+  }
+  .choose-us .text-box p {
+    font-weight: 140;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .choose-us .text-box button {
+    width: 80px;
+    height: 50px;
+  }
+  .choose-us .text-box button a {
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .choose-us .img-holder {
+    width: 100%;
+    height: fit-content;
+  }
+  .choose-us .img-holder .img-1 {
+    object-fit: cover;
+    width: 40%;
+  }
+  .choose-us .img-holder .img-2 {
+    width: 40%;
   }
 }
 
